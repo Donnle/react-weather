@@ -1,0 +1,16 @@
+.clear {
+  clear: both;
+}
+
+div:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+div .title {
+  float: left;
+  font-weight: 700;
+}
+
+div .value {
+  float: right;
+}

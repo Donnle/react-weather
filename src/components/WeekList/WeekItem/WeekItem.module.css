@@ -1,0 +1,40 @@
+li {
+  float: left;
+  padding: 15px;
+  cursor: pointer;
+  transition: 200ms ease;
+  border-radius: 10px;
+}
+
+li:hover {
+  transform: scale(1.1);
+  background: #fff;
+  color: #222831;
+  box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
+}
+
+li.active {
+  background: #fff;
+  color: #222831;
+  border-radius: 10px;
+}
+
+li .dayName {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+li .dayIcon {
+  display: block;
+  height: 30px;
+  width: auto;
+  margin: 0 auto;
+}
+
+li .dayTemp {
+  display: block;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-weight: 700;
+}

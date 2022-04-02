@@ -1,0 +1,57 @@
+.weatherGradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: var(--gradient);
+  border-radius: 25px;
+  opacity: 0.8;
+}
+
+.dateContainer {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.dateDayName {
+  margin: 0;
+}
+
+.dateDay {
+  display: block;
+}
+
+.location {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.locationIcon {
+  display: inline-block;
+  height: 0.8em;
+  width: auto;
+  margin-right: 5px;
+}
+
+.weatherContainer {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.weatherIcon.feather {
+  height: 60px;
+  width: auto;
+}
+
+.weatherTemp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.weatherDesc {
+  margin: 0;
+}
