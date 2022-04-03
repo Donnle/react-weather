@@ -1,0 +1,29 @@
+.locationContainer {
+  padding: 25px 35px;
+}
+
+.locationButton {
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: var(--gradient);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.locationButton:hover {
+  transform: scale(0.95);
+}
+
+.locationButton .feather {
+  height: 1em;
+  width: auto;
+  margin-right: 5px;
+}

@@ -1,12 +1,11 @@
 import axios from "axios";
 import {FAILURE, LOAD_WEATHER, REQUEST, SUCCESS} from "./constants";
 
-export const loadWeather = () => async (dispatch: any, getState: any) => {
+export const loadWeather = (cityName: string | null) => async (dispatch: any) => {
   dispatch({type: LOAD_WEATHER + REQUEST})
   try {
     const API_KEY = 'ccf3bd04f5a34b318d674041223103'
-    const ip = await axios.get('https://api.ipify.org?format=json')
-      .then(res => res.data.ip) || 'London'
+    const ip = cityName || await axios.get('https://api.ipify.org?format=json').then(res => res.data.ip)
     const data = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${ip}&days=3`)
       .then(res => res.data)
       .then(res => {
